@@ -1338,8 +1338,8 @@
                 buttonImage.className = icon;
                 button.id = id + postfix;
                 button.appendChild(buttonImage);
-                button.title = title;
-                $(button).tooltip({placement: 'bottom'})
+                buttonImage.title = title;
+                $(buttonImage).tooltip({placement: 'bottom'})
                 if (textOp)
                     button.textOp = textOp;
                 setupButton(button, true);
